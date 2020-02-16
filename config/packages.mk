@@ -2,15 +2,13 @@
 PRODUCT_PACKAGES += \
     OmniRecord \
     OmniStyle \
-    PixelLiveWallpaperPrebuilt \
+    RecorderPrebuilt \
     ThemePicker \
     AOSiPOverlayStub
 
 ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
-    Gallery2 \
-    LatinIME \
-    messaging
+    Dialer
 endif
 
 ifeq ($(filter-out Official CI Private, $(DERP_BUILDTYPE)),)
